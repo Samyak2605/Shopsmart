@@ -89,7 +89,7 @@ echo -e "\n${BLUE}Ensuring environment files exist...${NC}"
 if [ ! -f server/.env ]; then
     cat > server/.env <<'EOF'
 # Server Configuration
-PORT=5000
+PORT=5001
 NODE_ENV=development
 
 # Database Configuration (SQLite)
@@ -107,7 +107,7 @@ fi
 if [ ! -f client/.env ]; then
     cat > client/.env <<'EOF'
 # API Configuration
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:5001/api
 EOF
     echo -e "${GREEN}✅ Created client/.env${NC}"
 else
