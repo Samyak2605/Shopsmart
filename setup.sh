@@ -107,7 +107,7 @@ fi
 if [ ! -f client/.env ]; then
     cat > client/.env <<'EOF'
 # API Configuration
-VITE_API_URL=http://localhost:5001/api
+VITE_API_URL=http://localhost:5001
 EOF
     echo -e "${GREEN}✅ Created client/.env${NC}"
 else
